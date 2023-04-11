@@ -1,0 +1,32 @@
+
+  a, a:hover {
+    text-decoration: none;
+    color: #d34e8e;
+  }
+  
+  nav {
+    top:0;
+    left: 0;
+    position: fixed;
+    display: block;
+    width: 60px;
+    height: 100vh;
+    background-color: #2e01175d;
+    text-align: center;
+  }
+  
+  nav .brand {
+    font-size: 3rem;
+    font-weight: 600;
+    display: block;
+    background-color: #2e0117;
+  }
+  
+  nav .menu {
+    display: block;
+    margin-top: 250px;
+  }
+  
+  nav .menu img:hover, nav .menu img.active {
+    cursor: pointer;
+  }

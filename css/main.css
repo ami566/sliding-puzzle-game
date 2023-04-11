@@ -1,0 +1,122 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+
+html {
+ /* background: radial-gradient(circle, #f70776, #c3195d, #680747, #141010) fixed;
+ */
+ background: radial-gradient(circle, #f70777c4, #c3195db8, #6807489e, #141010cf) fixed;
+    
+  --mainFontBtn: 'Open Sans Condensed', sans-serif;
+  font-family: 'Simonetta', cursive;
+}
+
+h1 {
+  margin: 0px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.main {
+  transition: filter 0ms ease-in-out 300ms;
+  align-items: center;
+}
+
+.game-board {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tiles {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white;
+  padding: 8px;
+  border-radius: 0.5rem;
+}
+
+.selected {
+  background-color: #FFF !important;
+  background-image: none !important;
+  border: none;
+  color: white;
+}
+
+.tile {
+  font-family: var(--mainFontBtn);
+  font-size: 24px;
+  height: 100px;
+  margin: 1px;
+  width: 98px;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  background-size: cover;
+  border-width: 2px;
+}
+
+div[class*=level] {
+  text-align: center;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lvl-container {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.under {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* stopwatch */
+.time {
+  display: flex;
+  margin-left: 50px;
+  font-size: 30px;
+  color: black;
+  font-family: var(--mainFontBtn);
+}
+
+
+#puzzle-title h3 {
+  margin: 10px;
+}
+
+h3 {
+  display: flex;
+}
+
+#puzzle-title {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+#hint:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 10px wheat);
+}
+
+/* class when needed to hide elements */
+.remove {
+  display: none;
+}

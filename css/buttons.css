@@ -1,0 +1,238 @@
+html{
+    --mainFontBtn: 'Open Sans Condensed', sans-serif;
+}
+.btn {
+    cursor: pointer;
+    position: relative;
+    color: black;
+    width: 256px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    font-family: var(--mainFontBtn);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 10px 10px;
+}
+
+.pop-btn .icon {
+    margin: 0 0;
+    left: 20px
+}
+
+
+span .btn {
+    transition: all 0.3s;
+    transform: scale(1, 1);
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.level::before,
+.level::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* buttons to choose level */
+.level:hover::after {
+    animation-name: rotatecw;
+    animation-duration: 2s;
+}
+
+.level:hover::before {
+    animation-name: rotateccw;
+    animation-duration: 3s;
+}
+
+.level:hover::after,
+.level:hover::before {
+    left: 96px;
+    width: 64px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotatecw {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+#level-btns {
+    display: flex;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/* buttons in game */
+.game {
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.game:hover span {
+    transform: scale(1.2, 1.2);
+}
+
+.game::before {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(0.1, 0.1);
+}
+
+.game:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.game::after {
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.game:hover::after {
+    transform: scale(0, 0);
+    opacity: 0;
+}
+
+#show-nums {
+    width: 130px;
+}
+
+/* for choosing a theme */
+
+.categ-text {
+    position: absolute;
+    margin-top: 70px;
+    text-shadow: 1px 1px 8px black, 1px 1px 8px #680747;
+}
+
+#categ-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category {
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    box-shadow: 8px 8px 7px #680747;
+}
+
+.category h3 {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    z-index: 1000;
+}
+
+.category::after {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.category:hover {
+    box-shadow: -6px -6px 7px #680747;
+    transform: scale(0.9);
+    text-shadow: 1px 1px 5px black;
+}
+
+.category:hover::after {
+    opacity: 1;
+}
+
+.category img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/* for the popup */
+.pop-btn span {
+    font-weight: 600;
+    color:white;
+}
+
+.pop-btn {
+    background: #d4505b;
+    border-radius: 20px;
+    width: 150px;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: 3px 3px 7px #531f23;
+}
+
+.pop-btn:hover {
+    box-shadow: -3px -3px 7px #531f23;
+    transform: scale(0.95);
+    text-shadow: none;
+}
+
+/* submit btn */
+.submit-btn {
+    font-family: var(--mainFontBtn);
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    border-radius: 2.2rem;
+    align-items: center;
+    border-color: transparent;
+    margin: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+  }

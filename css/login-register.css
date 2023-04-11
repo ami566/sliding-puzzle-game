@@ -1,0 +1,172 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+html {
+    background: radial-gradient(circle, #f70777c4, #c3195db8, #6807489e, #141010cf) fixed;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.signup__container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(-50%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 30rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0.2rem 0.45rem rgba(0, 0, 0, .25);
+}
+
+.signup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 1, 5, 0.697);
+
+}
+
+.container__child {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+}
+
+.signup__thumbnail {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("/img/puzzle6.jpg");
+    background-position: top center;
+    background-size: cover;
+
+}
+
+.thumbnail__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    z-index: 2;
+}
+
+h1,
+h2 {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 100;
+   font-family: 'Passion One', cursive;
+}
+
+h1:nth-child(2) {
+   font-family: 'Rubik Dirt', cursive;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.heading--primary {
+    font-size: 35px;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+.heading--secondary {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.form-title {
+    color: rgb(100, 38, 38);
+   /* font-weight: bolder; */
+   font-family: 'Rubik Dirt', cursive;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 0.5px black;
+}
+
+.signup__form {
+    padding: 2.5rem;
+    background: #fafafa;
+}
+
+label {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(100, 38, 38);
+
+}
+
+.form-control {
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+
+[type="text"] {
+    color: #111;
+    height: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+[type="password"] {
+    color: #111;
+    height: 30px;
+    align-items: center;
+}
+
+.under-reg {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(100, 38, 38);
+}
+
+.go-log {
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 0 0 0.5px black;
+}
+
+.form-group {
+    margin: 15px;
+    flex-direction: column;
+    display: flex;
+}
+
+.submit {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin-top: 35px;
+}
+
+.login {
+    margin-top: 105px;
+}
+
+/* class when needed to hide elements */
+.remove {
+    display: none;
+  }

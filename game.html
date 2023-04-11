@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/popups.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/buttons.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/nav-menu.css'>
+    <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
+    
+    <title>Sliding puzzle</title>
+</head>
+
+<body>
+    <nav>
+          <img id="go-back-btn" class="icon active scroll-page" src="img/icons/home.png" alt="home icon">
+          <img id="rank-btn" class="icon active scroll-page" src="img/icons/ranking.png" alt="ranking icon">
+          <img class="icon active scroll-page" src="img/icons/account.png" alt="account icon">
+          <img id="logout-btn" class="icon active scroll-page" src="img/icons/logout.png" alt="logout icon">
+        </div>
+      </nav>
+    <div class="main">
+        <h1>Sliding Puzzle</h1>
+        <div class="lvl-container remove">
+            <h2>Which level do you want to play?</h2>
+            <div id="level-btns">
+                <div id="easy" class="level btn">
+                    <span class="btn">Easy</span>
+                </div>
+                <div id="medium" class="level btn">
+                    <span class="btn">Medium</span>
+                </div>
+                <div id="hard" class="level btn">
+                    <span class="btn">Hard</span>
+                </div>
+            </div>
+        </div>
+        <div class="category-container">
+            <h2 class="categ-header">Choose the theme you want to play on:</h2>
+            <div id="categ-btns">
+                <div id="cats-btn" class="category btn">
+                    <img src="img/level1/cats.jpg" alt="cats image">
+                    <h3 class="categ-text">Cats</h3>
+                </div>
+                <div id="cartoon-btn" class="category btn">
+                    <img src="img/level1/cartoon.jpg" alt="cartoon image">
+                    <h3 class="categ-text">Cartoons</h3>
+                </div>
+                <div id="princess-btn" class="category btn">
+                    <img src="img/level1/princess.jpg" alt="princess image">
+                    <h3 class="categ-text">Relatable girls</h3>
+                </div>
+            </div>
+            <div id="categ-btns">
+                <div id="book-couples-btn" class="category btn">
+                    <img src="img/level1/book-couple.jpg" alt="couple image">
+                    <h3 class="categ-text">Book fictional couples</h3>
+                </div>
+                <div id="city-btn" class="category btn">
+                    <img src="img/level1/city.jpg" alt="city image">
+                    <h3 class="categ-text">Cities at night</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board remove">
+            <div class="above game-board">
+                <div id="puzzle-title">
+                    <h3 id="title">Puzzle:  </h3>
+                    <h3 id="cats-level1" class="remove">Your average orange cat</h3>
+                    <h3 id="cats-level2" class="remove">"Okay, I am going to take a nap now"</h3>
+                    <h3 id="cats-level3" class="remove">“Cats will outsmart dogs every time.” – John Grogan</h3>
+
+                    <h3 id="cartoon-level1" class="remove">"Oops, heh! I thought you wanted a little… "danger"." - Star
+                        Butterfly</h3>
+                    <h3 id="cartoon-level2" class="remove">"Unique is good! That's why I'm an ultra recyclo-vegetarian."
+                        - Sam Manson from "Danni Phantom"</h3>
+                    <h3 id="cartoon-level3" class="remove">"I am your Tom and you're my Jerry. Let's get ready to fight
+                        and never be apart!"</h3>
+
+                    <h3 id="princess-level1" class="remove">Life status: Currently holding it all together with one
+                        bobby pin.</h3>
+                    <h3 id="princess-level2" class="remove">"In my defense, I was left unsupervised."</h3>
+                    <h3 id="princess-level3" class="remove">Too glam to give a damn.</h3>
+
+                    <h3 id="book-couple-level1" class="remove">Jude and Cardan</br>
+                        "You really hate me, don't you?", he asks, his smile
+                        growing.</br>
+                        "Almost as much as you hate me", I say, thinking of the page with my name scratched on it.</br>
+                        - Jude and Cardan confessing their love for each other
+                    <h3 id="book-couple-level2" class="remove">Aelin and Rowan</br>
+                        “To whatever end.” ― Sarah J. Maas,  TOG series/ Aelin and Rowan</h3>
+                    <h3 id="book-couple-level3" class="remove">Feyre and Rhysand</br>
+                        “To the stars who listen - and the dreams that are answered.” </br>
+                        ― Sarah J. Maas, ACOTAR series / Feyre and Rhysan
+                    </h3>
+
+                    <h3 id="city-level1" class="remove">Cities, like cats, will reveal themselves at night. - Rupert Brooke</h3>
+                    <h3 id="city-level2" class="remove">"I was the city lights
+                        of the night.
+                        But you kept
+                        Looking for the stars." - Shivani</h3>
+                    <h3 id="city-level3" class="remove">"Sometimes the darkness can make a beautiful view."</h3>
+                </div>
+                <img src="img/icons/hint.png" alt="hint icon" id="hint" class="icon" title="Show full image">
+            </div>
+
+            <div id="tiles">
+            </div>
+
+            <div class="under game-board">
+                <div class="game-btns">
+                    <div id="show-nums" class="game btn">
+                        <span class="btn">Show tile numbers</span>
+                    </div>
+                    <div id="restart-btn" class="game btn" title="This will reshuffle the tiles and reset the timer">
+                        <span class="btn">Restart</span>
+                    </div>
+                </div>
+
+                <div class="timer">
+                    <div class="time">
+                        00:00:00
+                    </div>
+                    <!-- <div class="controls">
+                    <button id="start">Start</button>
+                     <button id="stop-btn">Stop</button>
+                    <button id="reset">Reset</button>
+                </div> 
+                -->
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="solved-popup">
+        <img class="trophy" src="img/trophy3.jpg" alt="trophy">
+        <h2>Congratulations!</h2>
+        <span>You have completed the puzzle!</span>
+        <div class="time-complete">
+            <img class="icon" src="img/icons/clock.png" alt="clock icon">
+            <h3 id="player-time">00:00:00</h3>
+        </div>
+        <div id="categ-btns">
+            <div id="play-again-btn" class="pop-btn category btn">
+                <img class="icon btn" src="img/icons/replay.png" alt="replay icon">
+                <span class="btn">Play again</span>
+            </div>
+            <div id="main-page-btn" class="pop-btn category btn">
+                <img class="icon btn" src="img/icons/home.png" alt="home icon">
+                <span class="btn">Main page</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup hint remove" id="hint-popup">
+        <span>You have to arrange the tiles so the final image looks like this:</span>
+        <button class="close-popup-btn">&times;</button>
+        <div id="hint-image">
+            <img src="" alt="" id="hint-img">
+        </div>
+        <span id="notice">Notice: 3 extra seconds would be added to your time.</span>
+    </div>
+
+    <script src="js/game.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./js/index.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/login-register.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/buttons.css'>
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
+  <title>Welcome to PuzzleMe</title>
+</head>
+
+<body>
+  <a href="game.html">game</a>
+
+  <div id="register-container" class="signup__container remove">
+    <div class="container__child signup__thumbnail">
+      <div class="thumbnail__content text-center">
+        <h1 class="heading--primary">Welcome</h1>
+        <div class="cont">
+          <h1 class="heading--primary ">to </h1>
+          <h1 class="heading--primary"> PuzzleMe!</h1>
+        </div>
+        <h2 class="heading--secondary">Are you ready for a challenge?</h2>
+      </div>
+
+      <div class="signup__overlay">
+      </div>
+    </div>
+    <div class="container__child signup__form">
+      <form action="#">
+        <h2 class="form-title">Registration form</h2>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input class="form-control" type="text" name="username" id="username" placeholder="puzzleMe2023" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" type="text" name="email" id="emailR" placeholder="puzzleMe.2023@gmail.com"
+            required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" name="password" id="passwordR" placeholder="********" required />
+        </div>
+        <div class="form-group">
+          <label for="passwordRepeat">Repeat Password</label>
+          <input class="form-control" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="********"
+            required />
+        </div>
+        <div class="submit">
+          <button id="submit-btn" class="btn pop-btn submit-btn" type="submit">Sign up</button>
+          <span class="under-reg">Already have a registration?</span>
+          <a id="go-log-btn" class="go-log under-reg" href="#">Log in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="login-container" class="signup__container">
+    <div class="container__child signup__thumbnail">
+      <div class="thumbnail__content text-center">
+        <h1 class="heading--primary">Welcome</h1>
+        <div class="cont">
+          <h1 class="heading--primary ">to </h1>
+          <h1 class="heading--primary"> PuzzleMe!</h1>
+        </div>
+        <h2 class="heading--secondary">Let's get you started!</h2>
+      </div>
+
+      <div class="signup__overlay">
+      </div>
+    </div>
+    <div class="container__child signup__form">
+      <form class="login" action="#">
+        <h2 class="form-title">Login form</h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" type="text" name="email" id="emailL" placeholder="puzzleMe.2023@gmail.com"
+            required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" name="passwordR" id="passwordL" placeholder="********" required />
+        </div>
+        <div class="submit">
+          <button id="login-btn" class="btn pop-btn submit-btn" type="submit">Log in</button>
+          <span class="under-reg">Don't have a registration?</span>
+          <a id="go-sign-btn" class="go-log under-reg" href="#">Sign up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
